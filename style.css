@@ -1,0 +1,145 @@
+/* 
+    Syntax for CSS:
+    selector{
+        property: value;
+    }
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+h1, p{ 
+    font-family: "Montserrat", sans-serif;
+}
+
+
+#profile{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid;
+
+    border-color:rgb(204, 241, 248);
+    border-style: solid;
+    
+}
+
+body{
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23010420'/%3E%3Cstop offset='1' stop-color='%23010420' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23920049'/%3E%3Cstop offset='1' stop-color='%23920049' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%237c03b0'/%3E%3Cstop offset='1' stop-color='%237c03b0' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23000000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23020840'/%3E%3Cstop offset='1' stop-color='%23020840' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FF2492'/%3E%3Cstop offset='1' stop-color='%23FF2492' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.fa-brands, .fa-solid{
+    font-size: 25px;
+    margin: 0 10px 0 10px;
+    
+}
+
+#facebook:hover{
+    color: rgb(5, 90, 170);
+    
+}
+
+#youtube:hover{
+    color: red;
+    transition: 1s;
+    margin-top: -60px;
+}
+
+#tiktok:hover{
+    color: rgb(201, 201, 200);
+    border: rgb(0, 0, 0);
+    transition: 1s;
+    margin-top: -60px;
+}
+
+#web:hover{
+    color: blue;
+    transition: 1s;
+    margin-top: -60px;
+}
+
+#twitter:hover{
+    color: skyblue;
+    transition: 1s;
+    margin-top: -60px;
+}
+
+#instagram:hover{
+    color: rgb(237, 76, 76);
+    transition: 1s;
+    margin-top: -60px;
+}
+
+
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Tooltip Baby */
+
+a{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; 
+  }
+  
+  a .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #030b35;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+  
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  a.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #2417b8 transparent transparent transparent;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  a:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  #landing{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+ footer{
+    padding: 2%;
+ }
